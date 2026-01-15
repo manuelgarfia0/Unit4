@@ -6,11 +6,21 @@ public class Principal {
 		// Declaro variables
 		double pvp;
 		// Creo un articulo
-		Articulo a1 = new Articulo("Pijama", 10, 47);
+		Articulo a1 = new Articulo("Pijama", 10, 21, 47);
 		// Calculo el pvp
-		pvp = a1.precio * (1 + a1.iva / 100.0);
+		pvp = calcularPvp(a1);
 		// Muestro la informacion
-		System.out.println(a1.nombre + " - Precio: " + a1.precio + "€ - IVA: " + a1.iva + "% - PVP: " + pvp + "€");
+		mostrar(a1, pvp);
+	}
+
+	static void mostrar(Articulo a, double pvp) {
+		System.out.println(a.nombre + " - Precio: " + a.precio + "€ - IVA: " + a.iva + "% - PVP: " + pvp + "€");
+	}
+
+	static double calcularPvp(Articulo a) {
+		double pvp;
+		pvp = a.precio * (1 + a.iva / 100.0);
+		return pvp;
 	}
 
 }
