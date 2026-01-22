@@ -37,10 +37,64 @@ public class Fecha {
 		return bisiesto;
 	}
 
-	public boolean fechaCorrecta() {
-		boolean correcta = false;
+	private int obtenerDiasDelMes() {
 
-		return correcta;
+		int dias;
+
+		switch (mes) {
+		case 1, 3, 5, 7, 8, 10, 12 -> {
+			dias = 31;
+		}
+		case 4, 6, 9, 11 -> {
+			dias = 30;
+		}
+
+		case 2 -> {
+			dias = esBisiesto() ? 29 : 28;
+		}
+
+		default -> {
+			dias = 0;
+		}
+		}
+
+		return dias;
+	}
+
+	public boolean fechaCorrecta() {
+
+		boolean fechaValida = true;
+
+		if (this.año <= 0 || this.mes < 1 || this.mes > 12) {
+			fechaValida = false;
+		}
+
+		if (fechaValida) {
+			int diasMes = obtenerDiasDelMes();
+
+			if (this.dia < 1 || this.dia > diasMes) {
+				fechaValida = false;
+			}
+		}
+
+		return fechaValida;
+	}
+
+	public void diaSiguiente() {
+
+		this.dia++;
+
+		int diasMes = obtenerDiasDelMes();
+
+		if (this.dia > diasMes) {
+			this.dia = 1;
+			this.mes++;
+
+			if (this.mes > 12) {
+				this.mes = 1;
+				this.año++;
+			}
+		}
 	}
 
 	@Override
