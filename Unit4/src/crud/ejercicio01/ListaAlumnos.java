@@ -19,7 +19,7 @@ public class ListaAlumnos {
 	 *
 	 * @param alumno Alumno a añadir
 	 */
-	public void aniadir(Alumno alumno) {
+	public void añadir(Alumno alumno) {
 		alumnos.add(alumno);
 	}
 

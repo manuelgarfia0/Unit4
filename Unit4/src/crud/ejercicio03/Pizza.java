@@ -2,7 +2,6 @@ package crud.ejercicio03;
 
 /**
  * Clase que representa una pizza pedida en el día.
- * Tomada de boletin2.ejercicio04.Pizza.
  */
 public class Pizza {
 

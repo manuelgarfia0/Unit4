@@ -49,7 +49,7 @@ public class Principal {
 		System.out.println("\n-- Nuevo Alumno --");
 		String nombre = leerTexto("Nombre: ");
 		double notaMedia = leerDouble("Nota media (0-10): ");
-		listaAlumnos.aniadir(new Alumno(nombre, notaMedia));
+		listaAlumnos.añadir(new Alumno(nombre, notaMedia));
 		System.out.println("Alumno añadido correctamente.");
 	}
 

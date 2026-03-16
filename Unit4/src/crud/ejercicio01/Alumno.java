@@ -2,8 +2,6 @@ package crud.ejercicio01;
 
 /**
  * Clase que representa a un alumno con nombre y nota media.
- * Adaptada de boletin2.ejercicio03.Alumno añadiendo getters y setters
- * necesarios para el CRUD.
  */
 public class Alumno {
 

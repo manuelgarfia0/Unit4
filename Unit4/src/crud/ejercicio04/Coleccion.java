@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 /**
  * Clase que gestiona la colección personal de discos.
- * Centraliza todas las operaciones CRUD sobre el inventario.
  */
 public class Coleccion {
 

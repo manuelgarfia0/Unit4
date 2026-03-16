@@ -1,9 +1,7 @@
 package crud.ejercicio05;
 
 /**
- * Clase que representa una cuenta corriente bancaria. Basada en
- * boletin2.ejercicio01.CuentaCorriente, añadiendo un constructor de búsqueda
- * por DNI para el CRUD.
+ * Clase que representa una cuenta corriente bancaria.
  */
 public class CuentaCorriente {
 

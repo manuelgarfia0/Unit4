@@ -1,9 +1,7 @@
 package crud.ejercicio02;
 
 /**
- * Clase que representa un artículo del almacén. Basada en
- * boletin1.ejercicioD4.Articulo, añadiendo codigo, equals y refactorizando los
- * métodos de stock para el programa GESTISIMAL.
+ * Clase que representa un artículo del almacén.
  */
 public class Articulo {
 
